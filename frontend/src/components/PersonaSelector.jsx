@@ -24,6 +24,7 @@ export default function PersonaSelector({ personas, activeId, onSelect }) {
             </div>
             <p>{persona.title}</p>
           </div>
+          <span className="persona-row-name">{persona.label}</span>
         </button>
       ))}
     </div>
