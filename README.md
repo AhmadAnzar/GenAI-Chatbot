@@ -37,6 +37,13 @@ cp .env.example .env
 npm run dev
 ```
 
+### SCREENSHOTS 
+
+<img width="1918" height="994" alt="image" src="https://github.com/user-attachments/assets/6eb71aac-e365-4ff5-b5dd-d78e3f49ee77" />
+
+<img width="600" height="994" alt="f09bdc2e-75c0-4a1a-a986-bd92d2a97323" src="https://github.com/user-attachments/assets/44f5aff7-ffe3-42da-8dc4-85f903037153" />
+
+
 ### Deployment
 
 - Deployed frontend URL: https://gen-ai-chatbot-psi.vercel.app/
