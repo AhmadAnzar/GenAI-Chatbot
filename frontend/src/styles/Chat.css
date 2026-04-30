@@ -202,6 +202,11 @@
 }
 
 @media (max-width: 700px) {
+  .persona-list {
+    flex: 1;
+    min-height: 0;
+  }
+
   .chat-window {
     min-height: 360px;
     padding: 12px 10px;
