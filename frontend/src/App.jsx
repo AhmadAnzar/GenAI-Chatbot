@@ -2,13 +2,17 @@ import { useMemo, useState } from "react";
 import PersonaSelector from "./components/PersonaSelector.jsx";
 import ChatWindow from "./components/ChatWindow.jsx";
 import SuggestionChips from "./components/SuggestionChips.jsx";
+import anshumanImg from "./assets/personas/anshumansir.jpg";
+import kshitijImg from "./assets/personas/kshitijsir.jpg";
+import abhimanyuImg from "./assets/personas/abhimanyusir.jpg";
 
-const API_URL = "http://127.0.0.1:8000/api/chat";
+const API_BASE = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+const API_URL = `${API_BASE.replace(/\/$/, "")}/api/chat`;
 
 const PERSONAS = {
   anshuman: {
     label: "Anshuman",
-    image: "/src/assets/personas/anshumansir.jpg",
+    image: anshumanImg,
     title: "Clarity-first mentor",
     tagline: "Clarity, invariants, and sharp DSA plans",
     badge: "First-principles coach",
@@ -20,7 +24,7 @@ const PERSONAS = {
   },
   kshitij: {
     label: "Kshitij",
-    image: "/src/assets/personas/kshitijsir.jpg",
+    image: kshitijImg,
     title: "Pattern-driven guide",
     tagline: "Patterns, state definition, and pinpointed corrections",
     badge: "Systematic mentor",
@@ -32,7 +36,7 @@ const PERSONAS = {
   },
   abhimanyu: {
     label: "Abhimanyu",
-    image: "/src/assets/personas/abhimanyusir.jpg",
+    image: abhimanyuImg,
     title: "Structure and delivery",
     tagline: "Structured answers, pressure handling, and system design",
     badge: "Interview coach",
